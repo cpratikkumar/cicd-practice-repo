@@ -1,11 +1,21 @@
-name: workflow_name
+name: cicd
 on: workflow_dispatch
 jobs:
-  job_name:
+  build:
    runs-on: ubuntu-latest
    steps: 
-     - name: step_name
+     - name: building
        run: |
-           echo "HELLO WORLD"
-           echo "HELLO WORLD2"
+           echo "Build successfull"
+   test:
+    runs-on: ubantu-latest
+    steps: 
+       - name: testing
+       run: echo "TESTING SUCCESSFUL"
+   deploy:
+    runs-on: ubantu-latest
+    steps:
+     - name: deploy
+      run: "DEPLOY SUCCESSFUL"
            
+          
