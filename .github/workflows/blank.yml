@@ -1,21 +1,19 @@
-name: cicd
+name: CICD PIPELINE
 on: workflow_dispatch
 jobs:
   build:
-   runs-on: ubuntu-latest
-   steps: 
-     - name: building
-       run: |
-           echo "Build successfull"
-   test:
-    runs-on: ubantu-latest
-    steps: 
-       - name: testing
-       run: echo "TESTING SUCCESSFUL"
-   deploy:
-    runs-on: ubantu-latest
+    runs-on: ubuntu-latest
     steps:
-     - name: deploy
-      run: "DEPLOY SUCCESSFUL"
-           
-          
+      - name: building step
+        run: echo "BUILD SUCCESSFULL"
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: testing step
+        run: echo "TEST SUCCESSFULL"
+        
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: deploy step
+        run: echo "DEPLOY SUCCESSFULL"
