@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
-      - name: testing step
+      - namee: testing step
         run: echo "TEST SUCCESSFULL"
         
   deploy:
