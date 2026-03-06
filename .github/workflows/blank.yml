@@ -8,12 +8,14 @@ jobs:
         run: echo "BUILD SUCCESSFULL"
   test:
     runs-on: ubuntu-latest
+    needs: build
     steps:
       - name: testing step
         run: echo "TEST SUCCESSFULL"
         
   deploy:
     runs-on: ubuntu-latest
+    needs: test
     steps:
       - name: deploy step
         run: echo "DEPLOY SUCCESSFULL"
