@@ -1,14 +1,8 @@
-name: testing
-on:
- pull_request:
-   branches: 
-     - dev
-     - main
+name: workflow_name
+on: workflow_dispatch
 jobs:
- pullrequest:
-  runs-on: ubuntu-latest
-  steps:
-   - name: testing repo
-     run: |
-      echo "Testing repo done1"
-      echo "Testing repo done2"
+  job_name:
+   runs-on: ubuntu-latest
+   steps:
+     - name: step_name
+       run: echo "HELLO WORLD"
