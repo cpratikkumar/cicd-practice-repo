@@ -14,6 +14,7 @@ jobs:
         run: |
           echo "TEST SUCCESSFULL"
           echo ${{vars.name}}
+          echo ${{secrets.password}}
         
   deploy:
     runs-on: ubuntu-latest
