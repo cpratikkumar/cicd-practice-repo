@@ -13,7 +13,6 @@ jobs:
       - name: testing step
         run: |
           echo "TEST SUCCESSFULL"
-          exit: 1
         
   deploy:
     runs-on: ubuntu-latest
